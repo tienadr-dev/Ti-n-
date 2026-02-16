@@ -43,12 +43,8 @@ local Window = Fluent:CreateWindow({
 
 -- 📑 Các tab (mục chính)
 local Tabs = {
-	Main0 = Window:AddTab({ Title = "một số kênh🤓" }),  -- 👈 đổi tên tab 1
-	Main1 = Window:AddTab({ Title = "grow a gaden 🌱🌴🌵🌲" }),  -- 👈 đổi tên tab 2
-	Main2 = Window:AddTab({ Title = "bran rót💩" }),     -- 👈 đổi tên tab 3
-	Main3 = Window:AddTab({ Title = "99 đêm🥷" }),        -- 👈 đổi tên tab 4
-	Main4 = Window:AddTab({ Title = "blox fruit🍎" }),    -- 👈 đổi tên tab 5
-	Main5 = Window:AddTab({ Title = "plan vs branro🌲🐘t" }) -- 👈 đổi tên tab 6
+	
+	Main1 = Window:AddTab({ Title = "blox fruit🍎" }),    -- 👈
 }
 
 ------------------------------------------------
@@ -58,7 +54,7 @@ Tabs.Main0:AddButton({
 	Title = "tiktok bạn:)",              -- 👈 tên nút
 	Description = "oách xà lách vô cùng",-- 👈 mô tả nút
 	Callback = function()
-		setclipboard("https://www.tiktok.com/@jannie3342?_t=ZS-90QsJQ5j0NO&_r=1")  -- 👈 link sao chép
+		setclipboard("https://www.tiktok.com/@jannie3342?_t=132653336439104=")  -- 👈 link sao chép
 	end
 })
 
@@ -66,7 +62,7 @@ Tabs.Main0:AddButton({
 	Title = "tik",
 	Description = "làm chơi thui",
 	Callback = function()
-		setclipboard("https://www.tiktok.com/@b.yt03?_t=ZS-90QsHokNlwN&_r=1")     -- 👈 link khác
+		setclipboard("https://www.tiktok.com/@b.yt03?_t=132653336439104")     -- 👈 link khác
 	end
 })
 
@@ -79,7 +75,7 @@ Tabs.Main0:AddButton({
 })
 
 ------------------------------------------------
--- TAB 2: Ví dụ thêm script
+-- TAB 1: Ví dụ thêm script
 ------------------------------------------------
 Tabs.Main1:AddButton({
 	Title = "Tiến adr",                             -- 👈 tên nút hiển thị
@@ -93,8 +89,8 @@ Tabs.Main1:AddButton({
 	end
 })
 
-Tabs.Main4:AddButton({
-	Title = "Tiến adr",                             -- 👈 tên nút hiển thị
+Tabs.Main1:AddButton({
+	Title = "GravityHub",                             -- 👈 tên nút hiển thị
 	Description = "cx ngon",-- 👈 mô tả
 	Callback = function()
 		local Settings = {
@@ -103,4 +99,15 @@ Tabs.Main4:AddButton({
 		}
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))()
 	end
+})
+
+Tabs.Main1:AddButton({
+	Title = "lòng hihi",                             -- 👈 tên nút hiển thị
+	Description = "đánh nhanh",-- 👈 mô tả
+	Callback = function()
+		local Settings = {
+			JoinTeam = "Pirates";   -- 👈 team mặc định: Pirates hoặc Marines
+			Translator = true;      -- 👈 bật dịch sang tiếng Việt nếu có
+		}
+		loadstring(game:HttpGet(" https://raw.githubusercontent.com/longhihilonghihi-hub/Devs-LongHiHiV2/refs/heads/main/MainV2.txt"))()
 })
